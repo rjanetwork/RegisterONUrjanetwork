@@ -1,0 +1,437 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta http-equiv="Access-Control-Allow-Origin" content="*" />
+        <meta name="theme-color" content="#e74a3b">
+        <meta name="apple-mobile-web-app-status-bar-style" content="#e74a3b" />
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="mobile-web-app-capable" content="yes">
+        <meta name="description" content="Menyediakan layanan internet termurah yang terdiri dari Internet Cepat on Fiber hingga 10Mbps, Camera CCTV dan TV Pintar yang dilengkapi fitur lengkap lainnya.">
+        <meta name="author" content="Ahmad Zulkarnain Al Farisi">
+        <meta name="title" content="Halaman Depan || Landing ErkaFiber.ID">
+        <meta name="keywords" content="internet cepat, Internet Broadband, Internet rumah,  internet keluarga, internet murah, internet stabil, internet unlimited, paket internet, speedtest indihome, tv kabel, tv kabel hd">
+        <meta http-equiv="refresh" content="600">
+        <title>Register ONU RJA NETWORK</title>
+        <link rel="shortcut icon" href="https://erkafiber.id/img/icon.png" sizes="16x16" type="image/png">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+        <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+        <link rel="stylesheet" href="https://files.billing.or.id/vendor/animsition/animsition.min.css" media="all">
+        <link rel="stylesheet" href="https://files.billing.or.id/backend/css/select2.min.css">
+        <link rel="stylesheet" href="https://files.billing.or.id/backend/css/bootstrap-select.css">
+        <link rel="stylesheet" href="https://files.billing.or.id/backend/vendor/datatables/dataTables.bootstrap4.min.css">
+        <link rel="stylesheet" href="https://files.billing.or.id/backend/leaflet-search.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqvmap/1.5.1/jqvmap.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i">
+        <link rel="stylesheet" href="https://cdn.datatables.net/buttons/1.6.2/css/buttons.dataTables.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.5.0/css/all.min.css">
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css">
+        <link rel="stylesheet" href="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.css">
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+        <!-- Bootstrap Icons -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+        <!-- Select2 CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+        <!-- DataTables CSS -->
+        <link href="https://cdn.datatables.net/1.13.4/css/dataTables.bootstrap5.min.css" rel="stylesheet" />
+        <!-- Summernote CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-bs5.min.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+        <script src="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.js"></script>
+        <script src="https://unpkg.com/@ngageoint/leaflet-geopackage@2.0.5/dist/leaflet-geopackage.min.js"></script>
+        <script src="https://files.billing.or.id/backend/leaflet-search.js"></script>
+        <script>
+          if ('serviceWorker' in navigator) {
+            window.addEventListener('load', function() {
+              navigator.serviceWorker.register('service-worker.js').then(function(registration) {
+                // Registration successful
+              }, function(err) {
+                // Registration failed
+              });
+            });
+          }
+        </script>
+        <style>
+            /* Sempurnakan mirip asli onu.erkafiber.my.id */
+            body {
+                background: #f8fafc;
+                font-family: 'Nunito', 'Source Sans Pro', Arial, sans-serif;
+            }
+            .container-fluid {
+                max-width: 720px;
+                margin: 0 auto;
+                padding: 0;
+            }
+            .onu-card {
+                border-radius: 0.75rem;
+                border: 2px solid #e74a3b;
+                box-shadow: 0 2px 8px 0 rgba(231,74,59,0.07);
+                background: #fff;
+                margin-bottom: 1.5rem;
+            }
+            .onu-card .card-body {
+                padding: 2rem 2.2rem 1.5rem 2.2rem;
+            }
+            .onu-title {
+                font-size: 1.45rem;
+                font-weight: 700;
+                color: #e74a3b;
+                margin-bottom: 1.5rem;
+                letter-spacing: 0.5px;
+            }
+            .form-label {
+                font-weight: 600;
+                color: #e74a3b;
+                font-size: 1.05rem;
+                margin-bottom: 0.2rem;
+            }
+            .form-control, .form-select {
+                border-radius: 0.5rem;
+                border: 1.5px solid #e5e7eb;
+                font-size: 1.05rem;
+                min-height: 2.3rem;
+                padding: 0.45rem 1rem;
+            }
+            .form-control:focus, .form-select:focus {
+                border-color: #e74a3b;
+                box-shadow: 0 0 0 0.13rem rgba(231,74,59,0.10);
+            }
+            .btn-primary {
+                background: #e74a3b;
+                border: none;
+                border-radius: 0.5rem;
+                font-weight: 700;
+                font-size: 1.08rem;
+                letter-spacing: 0.2px;
+                padding: 0.7rem 0;
+            }
+            .btn-primary:hover, .btn-primary:focus {
+                background: #c0392b;
+            }
+            .btn-outline-secondary {
+                border-radius: 0.5rem;
+                font-size: 1.05rem;
+                padding: 0.6rem 0;
+            }
+            .text-primary {
+                color: #e74a3b !important;
+            }
+            .mb-4 {
+                margin-bottom: 1.5rem !important;
+            }
+            .mt-4 {
+                margin-top: 2rem !important;
+            }
+            .command-label {
+                font-weight: 700;
+                color: #e74a3b;
+                margin-bottom: 0.5rem;
+            }
+            #telnet {
+                font-family: 'Fira Mono', 'Consolas', 'Menlo', monospace;
+                font-size: 1.08rem;
+                background: #f9f9f9;
+                border: 1.5px solid #e5e7eb;
+                border-radius: 0.5rem;
+                min-height: 260px;
+                color: #212529;
+                resize: vertical;
+                width: 100%;
+                margin-bottom: 0.5rem;
+            }
+            @media (max-width: 900px) {
+                .container-fluid {
+                    max-width: 98vw;
+                }
+                .onu-card .card-body {
+                    padding: 1.2rem 0.7rem 1.2rem 0.7rem;
+                }
+            }
+            @media (max-width: 576px) {
+                .container-fluid {
+                    max-width: 100vw;
+                    padding: 0 0.2rem;
+                }
+                .onu-card .card-body {
+                    padding: 0.7rem 0.2rem 1rem 0.2rem;
+                }
+                .onu-title {
+                    font-size: 1.1rem;
+                }
+                .form-label {
+                    font-size: 0.93rem;
+                }
+                .form-control, .form-select {
+                    font-size: 0.93rem;
+                    min-height: 1.8rem;
+                    padding: 0.25rem 0.5rem;
+                }
+                #telnet {
+                    font-size: 0.91rem;
+                    min-height: 120px;
+                }
+                .btn-primary, .btn-outline-secondary {
+                    font-size: 0.97rem;
+                    padding: 0.45rem 0;
+                }
+            }
+        </style>
+    </head>
+    <body class="bg-light">
+    <div class="container-fluid py-5">
+        <div class="row justify-content-center">
+            <div class="col-12">
+                <div class="onu-card card border-0">
+                    <div class="card-body">
+                        <div class="onu-title text-center mb-4"><i class="bi bi-hdd-network me-2"></i>Register ONU RJA Network</div>
+                        <form class="needs-validation" novalidate>
+                            <div class="mb-3">
+                                <label for="card_id" class="form-label">Card ID</label>
+                                <select class="form-select" id="card_id" required>
+                                    <option value="" selected disabled>Pilih Card ID</option>
+                                    <!-- ...options 1-16... -->
+                                </select>
+                                <div class="invalid-feedback">Pilih Card ID.</div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="pon_id" class="form-label">PON ID</label>
+                                <select class="form-select" id="pon_id" required>
+                                    <option value="" selected disabled>Pilih PON ID</option>
+                                    <!-- ...options 1-16... -->
+                                </select>
+                                <div class="invalid-feedback">Pilih PON ID.</div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="onu_id" class="form-label">ONU ID</label>
+                                <select class="form-select" id="onu_id" required>
+                                    <option value="" selected disabled>Pilih ONU ID</option>
+                                    <!-- ...options 1-128... -->
+                                </select>
+                                <div class="invalid-feedback">Pilih ONU ID.</div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="speed" class="form-label">Speed</label>
+                                <select class="form-select" id="speed" required>
+                                    <option value="" selected disabled>Pilih Speed</option>
+                                    <option value="10M">10M</option>
+                                    <option value="20M">20M</option>
+                                    <option value="50M">50M</option>
+                                    <option value="100M">100M</option>
+                                    <option value="200M">200M</option>
+                                    <option value="300M">300M</option>
+                                    <option value="500M">500M</option>
+                                    <option value="1000M">1000M</option>
+                                </select>
+                                <div class="invalid-feedback">Pilih Speed.</div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="serial" class="form-label">Serial Number</label>
+                                <input type="text" class="form-control" id="serial" placeholder="Serial Number" required>
+                                <div class="invalid-feedback">Masukkan Serial Number.</div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="nama" class="form-label">Nama ONU</label>
+                                <input type="text" class="form-control" id="nama" placeholder="Nama ONU" required>
+                                <div class="invalid-feedback">Masukkan Nama ONU.</div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="deskripsi" class="form-label">Deskripsi ONU</label>
+                                <input type="text" class="form-control" id="deskripsi" placeholder="Deskripsi ONU" required>
+                                <div class="invalid-feedback">Masukkan Deskripsi ONU.</div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="vlan_ppp" class="form-label">VLAN ID PPPoE</label>
+                                <input type="number" class="form-control" id="vlan_ppp" placeholder="VLAN ID PPPoE" required>
+                                <div class="invalid-feedback">Masukkan VLAN ID PPPoE.</div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="user_ppp" class="form-label">User PPPoE</label>
+                                <input type="text" class="form-control" id="user_ppp" placeholder="User PPPoE" required>
+                                <div class="invalid-feedback">Masukkan User PPPoE.</div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="pass_ppp" class="form-label">Pass PPPoE</label>
+                                <input type="text" class="form-control" id="pass_ppp" placeholder="Pass PPPoE" required>
+                                <div class="invalid-feedback">Masukkan Pass PPPoE.</div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="whatsapp" class="form-label">WhatsApp ONU</label>
+                                <input type="number" class="form-control" id="whatsapp" placeholder="WhatsApp ONU">
+                            </div>
+                            <div class="mb-3">
+                                <label for="vlan_hsp" class="form-label">VLAN ID Hotspot</label>
+                                <input type="number" class="form-control" id="vlan_hsp" placeholder="VLAN ID Hotspot">
+                            </div>
+                            <div class="mb-3">
+                                <label for="ssid_hsp" class="form-label">SSID Hotspot</label>
+                                <input type="text" class="form-control" id="ssid_hsp" placeholder="SSID Hotspot">
+                            </div>
+                            <div class="mb-3">
+                                <label for="link_acs" class="form-label">URL TR069 / Genie ACS</label>
+                                <input type="text" class="form-control" id="link_acs" placeholder="URL TR069 / Genie ACS">
+                            </div>
+                            <div class="mb-3">
+                                <label for="vlan_acs" class="form-label">VLAN ID TR069</label>
+                                <input type="number" class="form-control" id="vlan_acs" placeholder="VLAN ID TR069">
+                            </div>
+                            <div class="mb-3">
+                                <label for="user_acs" class="form-label">User TR069</label>
+                                <input type="text" class="form-control" id="user_acs" placeholder="User TR069">
+                            </div>
+                            <div class="mb-3">
+                                <label for="pass_acs" class="form-label">Pass TR069</label>
+                                <input type="text" class="form-control" id="pass_acs" placeholder="Pass TR069">
+                            </div>
+                            <div class="form-check mb-3">
+                                <input class="form-check-input" type="checkbox" id="invalidCheck" required>
+                                <label class="form-check-label" for="invalidCheck">
+                                    Saya Pastikan Semua Data Benar dan Valid
+                                </label>
+                                <div class="invalid-feedback">Anda harus menyetujui sebelum submit.</div>
+                            </div>
+                            <div class="d-grid">
+                                <button type="submit" class="btn btn-primary btn-lg"><i class="bi bi-save me-2"></i>Register ONU RJA Network</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <!-- Command Output di luar card -->
+                <div class="onu-card card border-0 mt-4">
+                    <div class="card-body">
+                        <label for="telnet" class="form-label command-label">Command Output</label>
+                        <textarea class="form-control w-100" id="telnet" rows="16" style="min-width:100%;max-width:100%;resize:vertical;">Contoh command akan muncul di sini...</textarea>
+                        <button type="button" class="btn btn-outline-secondary mt-2 w-100" onclick="copyCommand()">
+                            <i class="bi bi-clipboard"></i> Copy Command
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        // Generate options for Card ID, PON ID, ONU ID
+        function generateOptions(id, max) {
+            let select = document.getElementById(id);
+            for (let i = 1; i <= max; i++) {
+                let opt = document.createElement('option');
+                opt.value = i;
+                opt.text = i;
+                select.appendChild(opt);
+            }
+        }
+        generateOptions('card_id', 16);
+        generateOptions('pon_id', 16);
+        generateOptions('onu_id', 128);
+
+        // Update command output sesuai input
+        function updateCommand() {
+            const card = document.getElementById('card_id').value;
+            const pon = document.getElementById('pon_id').value;
+            const onu = document.getElementById('onu_id').value;
+            const serial = document.getElementById('serial').value;
+            const nama = document.getElementById('nama').value;
+            const deskripsi = document.getElementById('deskripsi').value;
+            const vlan_ppp = document.getElementById('vlan_ppp').value;
+            const user_ppp = document.getElementById('user_ppp').value;
+            const pass_ppp = document.getElementById('pass_ppp').value;
+            const speed = document.getElementById('speed').value;
+            // Optional fields
+            // VLAN Hotspot, SSID Hotspot, VLAN ACS, User/Pass ACS, Link ACS, WhatsApp are not used in this command for now
+
+            let cmd = '';
+            // Format description tanpa versi
+            let desc = nama + ' || ' + serial;
+            if (deskripsi) desc += ' || ' + deskripsi;
+            if(card && pon && onu && serial && nama && deskripsi && vlan_ppp && user_ppp && pass_ppp && speed) {
+                cmd =
+`conf t
+interface gpon-olt_${card}/${pon}/1
+no onu ${onu}
+onu ${onu} type ALL sn ${serial}
+exit
+interface gpon-onu_${card}/${pon}/1:${onu}
+name ${nama}
+description ${desc}
+tcont 1 name pppoe profile ${speed}
+gemport 1 name pppoe tcont 1
+gemport 1 traffic-limit upstream ${speed} downstream ${speed}
+service-port 1 vport 1 user-vlan ${vlan_ppp} vlan ${vlan_ppp}
+exit
+pon-onu-mng gpon-onu_${card}/${pon}/1:${onu}
+service pppoe gemport 1 vlan ${vlan_ppp}
+wan-ip 1 mode pppoe username ${user_ppp} password ${pass_ppp} vlan-profile pppoe host 1
+wan-ip 1 ping-response enable traceroute-response enable
+wan 1 ethuni 1,2,3 ssid 1 service internet host 1
+security-mgmt 212 state enable mode forward protocol web
+exit
+end
+write`;
+            } else {
+                cmd = 'Lengkapi semua data utama untuk generate command.';
+            }
+            document.getElementById('telnet').value = cmd;
+        }
+        // Event listener untuk semua input utama
+        const ids = ['card_id','pon_id','onu_id','serial','nama','deskripsi','vlan_ppp','user_ppp','pass_ppp','speed'];
+        ids.forEach(id => {
+            document.getElementById(id).addEventListener('input', updateCommand);
+        });
+        // Bootstrap validation
+        (() => {
+            'use strict';
+            const forms = document.querySelectorAll('.needs-validation');
+            Array.from(forms).forEach(form => {
+                form.addEventListener('submit', event => {
+                    if (!form.checkValidity()) {
+                        event.preventDefault();
+                        event.stopPropagation();
+                    }
+                    form.classList.add('was-validated');
+                }, false);
+            });
+        })();
+        function copyCommand() {
+            let textarea = document.getElementById("telnet");
+            textarea.select();
+            textarea.setSelectionRange(0, 99999); // For mobile
+            document.execCommand("copy");
+            // Optional: show feedback
+            textarea.blur();
+            let btn = event.target;
+            btn.innerHTML = '<i class="bi bi-clipboard-check"></i> Copied!';
+            setTimeout(() => {
+                btn.innerHTML = '<i class="bi bi-clipboard"></i> Copy Command';
+            }, 1500);
+        }
+    </script>
+        <!-- Bootstrap Bundle JS -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- jQuery -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <!-- Select2 JS -->
+        <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+        <!-- DataTables JS -->
+        <script src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script>
+        <script src="https://cdn.datatables.net/1.13.4/js/dataTables.bootstrap5.min.js"></script>
+        <!-- Summernote JS -->
+        <script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-bs5.min.js"></script>
+        <script src="https://files.billing.or.id/herobiz/assets/vendor/aos/aos.js"></script>
+        <script src="https://files.billing.or.id/herobiz/assets/vendor/glightbox/js/glightbox.min.js"></script>
+        <script src="https://files.billing.or.id/herobiz/assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+        <script src="https://files.billing.or.id/herobiz/assets/vendor/swiper/swiper-bundle.min.js"></script>
+        <script src="https://files.billing.or.id/herobiz/assets/vendor/php-email-form/validate.js"></script>
+        <script src="https://files.billing.or.id/herobiz/assets/js/main.js"></script>
+        <script src="https://files.billing.or.id/frontend/libraries/jquery/jquery-3.4.1.min.js"></script>
+        <script src="https://files.billing.or.id/mobile/assets/js/plugins/splide/splide.min.js"></script>
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    </body>
+</html>
